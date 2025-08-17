@@ -1,11 +1,11 @@
 package com.example.agenttracker.dto;
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 import lombok.Data;
 
 @Data
 public class VisitDTO {
     private String note;
-    private LocalDateTime date;
+    private LocalDate date;
     private Long projectId;
 
 }

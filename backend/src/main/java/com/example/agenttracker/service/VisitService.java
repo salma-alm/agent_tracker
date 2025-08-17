@@ -7,7 +7,7 @@ import com.example.agenttracker.repository.ProjectRepository;
 import com.example.agenttracker.repository.VisitRepository;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 import java.util.List;
 
 @Service
@@ -35,7 +35,7 @@ public class VisitService {
 
         Visit visit = Visit.builder()
                 .note(visitDTO.getNote())
-                .date(visitDTO.getDate() != null ? visitDTO.getDate() : LocalDateTime.now())
+                .date(visitDTO.getDate() != null ? visitDTO.getDate() : LocalDate.now())
                 .project(project)
                 .build();
 
