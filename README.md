@@ -27,7 +27,7 @@ cd backend
 ./mvnw spring-boot:run
 ```
 
-### Backend
+### Frontend
 ```bash
 cd frontend
 flutter pub get
